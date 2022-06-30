@@ -1,9 +1,10 @@
 import React from "react";
 
+export type SquareValue= null | "X" | "O";
 interface PropsSquare {
   // onClick: () => void;
   onClick: VoidFunction;
-  value : number;
+  value : SquareValue;
 }
 export class Square extends React.Component<PropsSquare> {
   render() {
