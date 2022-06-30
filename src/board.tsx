@@ -1,8 +1,8 @@
 import React from "react";
-import { Square } from "./square";
+import { Square, SquareValue } from "./square";
 
 interface PropsBoard {
-  squares: number[];
+  squares: SquareValue[];
   onClick: (index: number) => void;
 }
 export class Board extends React.Component<PropsBoard> {
